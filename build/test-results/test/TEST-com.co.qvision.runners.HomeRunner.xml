@@ -1,10 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.co.qvision.runners.HomeRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="SCIS3-PC26" time="0.0">
+<testsuite name="com.co.qvision.runners.HomeRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-C15MV53" time="0.0">
   <properties/>
   <system-out><![CDATA[
-1 Scenarios (?[32m1 passed?[0m)
-3 Steps (?[32m3 passed?[0m)
-0m7,732s
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/Home.feature:4 ?[0m# Home
+
+1 Scenarios (?[31m1 failed?[0m)
+3 Steps (?[31m1 failed?[0m, ?[36m1 skipped?[0m, ?[32m1 passed?[0m)
+0m11,464s
+
+org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "input"
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-C15MV53', ip: '10.0.0.35', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.<init>(Select.java:48)
+	at net.serenitybdd.core.pages.DropdownSelector.byValue(DropdownSelector.java:33)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.selectByValue(WebElementFacadeImpl.java:929)
+	at net.serenitybdd.screenplay.actions.selectactions.SelectByValueFromTarget.performAs(SelectByValueFromTarget.java:19)
+	at net.serenitybdd.screenplay.actions.selectactions.SelectByValueFromTarget$$EnhancerByCGLIB$$7d515109.CGLIB$performAs$0(<generated>)
+	at net.serenitybdd.screenplay.actions.selectactions.SelectByValueFromTarget$$EnhancerByCGLIB$$7d515109$$FastClassByCGLIB$$df81d005.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at net.serenitybdd.screenplay.actions.selectactions.SelectByValueFromTarget$$EnhancerByCGLIB$$7d515109.performAs(<generated>)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at com.co.qvision.task.ValidateField.performAs(ValidateField.java:14)
+	at com.co.qvision.task.ValidateField$$EnhancerByCGLIB$$205b8a7b.CGLIB$performAs$0(<generated>)
+	at com.co.qvision.task.ValidateField$$EnhancerByCGLIB$$205b8a7b$$FastClassByCGLIB$$b153aa60.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at com.co.qvision.task.ValidateField$$EnhancerByCGLIB$$205b8a7b.performAs(<generated>)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at com.co.qvision.stepdefinitions.HomeStepDefinition.userKnowsAllFields(HomeStepDefinition.java:36)
+	at ?.user knows all fields(src/test/resources/features/Home.feature:6)
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 

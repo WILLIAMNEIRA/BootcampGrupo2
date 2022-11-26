@@ -1,0 +1,43 @@
+package com.co.qvision.task;
+
+import com.co.qvision.userinterfaces.HomePage;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.Tasks;
+
+import net.serenitybdd.screenplay.actions.*;
+
+public class ValidateField implements Task {
+    @Override
+    public <T extends Actor> void performAs(T actor) {
+
+            actor.attemptsTo(
+                    Enter.theValue("bootcampG2").into(HomePage.TXT_TEXTINPUT),
+                    Enter.theValue("1234").into(HomePage.TXT_PASSWORD),
+                    Enter.theValue("Esta es nuestra automatizacion").into(HomePage.TXT_TEXTTAREA),
+                    //
+                    //
+                    SelectFromOptions.byValue("1").from(HomePage.SELECT_DROPDOWN),
+                    Enter.theValue("Chicago").into(HomePage.DATALIST_DROPDOWN),
+                   // Click.on(HomePage.FILE_INPUT),
+                    Click.on(HomePage.CHECKED_CHECKBOX),
+                    Click.on(HomePage.DEFAULT_CHECKBOX),
+                    Click.on(HomePage.CHECKED_RADIO),
+                    Click.on(HomePage.DEFAULT_RADIO),
+                    SelectFromOptions.byValue("#105DD1").from(HomePage.COLOR_PICKER));
+
+
+
+
+
+
+
+
+
+    }
+        public static ValidateField enterData() {
+            return Tasks.instrumented(ValidateField.class);
+
+        }
+    }
+
