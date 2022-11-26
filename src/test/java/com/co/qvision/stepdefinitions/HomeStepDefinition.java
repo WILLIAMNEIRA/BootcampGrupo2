@@ -1,6 +1,6 @@
 package com.co.qvision.stepdefinitions;
 
-import com.co.qvision.task.Scrip;
+import com.co.qvision.task.ValidateField;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -33,7 +33,7 @@ public class HomeStepDefinition {
 
     @When("^user knows all fields$")
     public void userKnowsAllFields() {
-    OnStage.theActorInTheSpotlight().attemptsTo(Scrip.enterData());
+    OnStage.theActorInTheSpotlight().attemptsTo(ValidateField.enterData());
     }
 
     @Then("^user validate pages$")
